@@ -13,7 +13,7 @@
 ## Data Set Acquisition:
 The data gathering process for this project included taking pictures of rice grains of several rice types in specific conditions, i.e. 8 to 10 rice grains of the same rice type were placed in a cardboard box along with a reference object (5 rupee coin) & a universal object (in this case, a coke bottle cap) for the purpose of streamlining the identification & categorizing process.
 
-## Process
+## Process:
 Step 1 - Read RGB image as greyscale using **skimage.io** library.
 
 Step 2 - Convert greyscale image to a binary image by taking threshold of the image.
@@ -24,13 +24,21 @@ Step 4 - After the binary image is smoothed perfectly, label the image & generat
 
 Step 5 - Bounding box will provide orientation, dimensions, & diameter of rice grains as well as the reference object, from which the diameter of the coin will be used to compute a pixel-per-cm value, which will be further used to determine height & width of each grain inside the morphed image. The diameter of the coin will be gathered via a loop with eccentricity value less than 0.2, as it will identify a round object inside the image.
 
-Step 6 - Pixel value formula is - ***Pixel Value = Coin-Diameter/Total-Pixels***.
+Step 6 - Pixel value formula is: 
+
+```
+Pixel Value = Coin-Diameter/Total-Pixels
+```
 
 Step 7 - Extracts the measurements (height, width, intensity level, & average color) of rice grains & compute their height & width values using the above-computed pixel value.
 
 Step 8 - Find orientation (angle) of each rice grain, convert it from radians to degree & crop each of the selected rice grain as a separate image.
 
-Step 9 - Use following formula to rotate the cropped image & to make a 90-degree angle of the rice grain: ***90-degree - (Image Angle - 1)***.
+Step 9 - Use following formula to rotate the cropped image & to make a 90-degree angle of the rice grain: 
+
+```
+90-degree - (Image Angle - 1)
+```
 
 Step 10 - Pad the cropped image with 0s, to prepare it for cropping without affecting the corners of the rice grains.
 
@@ -66,3 +74,15 @@ Step 14 - Finally, save the gathered dimensions, new image name, its type, its a
 6. Cropped Rice Grain:
 
 ![06-cropped-rice-grain](https://user-images.githubusercontent.com/37273194/111885346-faea2900-89e8-11eb-995a-bbf0cb0eab47.png)
+
+## Important:
+- Repo contains following items:
+  - Source.py - main program file.
+  - Data set. 
+  - Step by step process images.
+  - Sample results excel file.
+
+## Note:
+```
+Presently, the program is configured to work with 10 types of rice grains with 10 sample each (run_RGI method). It can be changed accordingly, as this repo only contains a fewsample images due to their size).
+```

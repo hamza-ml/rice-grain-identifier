@@ -2,9 +2,9 @@
 
 ## Introduction:
 ### Python program that does following:
-- Identifies differnt type of rice grains from a given image.
-- Extract their dimensions.
-- Save their dimensions in an excel file.
+- [x] Identifies different type of rice-grains from a given image.
+- [x] Extract their dimensions.
+- [x] Save their dimensions in an excel file.
 
 ## How to run this project:
 - Download & subsequently open this repo in VS Code.

@@ -80,12 +80,12 @@ Rotate image to 90 = 90-degree - (Image Angle - 1)
 - Repo contains following items:
   - Source.py - main program file.
   - Data set. 
-  - Step by step process images.
+  - Step-by-step images of the complete process.
   - Sample results excel file.
 
 ## Note:
 ```
 Orginally, the program is configured to work with 10 types of rice grains with 5 sample each. However, it can be changed accordingly, as the source file now contains 2 main methods:
-run_RGI() - The original method, which works with 10 types of rice with 5 images each.
-run_RGI_with_small_dataset() - An alternate method for this repo, which works with 3 rice types with 1 image each to demonstrate the RGI working.
+1. run_RGI() - The original method, which works with 10 types of rice with 5 images each.
+2. run_RGI_with_small_dataset() - An alternate method for this repo, which works with 3 rice types with 1 image each to demonstrate the RGI working.
 ```

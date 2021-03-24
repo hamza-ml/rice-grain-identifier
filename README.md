@@ -9,7 +9,9 @@
 ## How to run this project:
 - Download & subsequently open this repo in VS Code.
 - Make sure the sample images are placed in the same directory as the ***source.py*** file.
-- Open terminal and run ***py source.py***
+- Open terminal and run following commands in order: 
+  - ***pip install -r requirements.txt***
+  - ***py source.py***
 
 ## Data Set Acquisition:
 The data gathering process for this project included taking pictures of rice grains of several rice types in specific conditions, i.e. 8 to 10 rice grains of the same rice type were placed in a cardboard box along with a reference object (5 rupee coin) & a universal object (in this case, a coke bottle cap) for the purpose of streamlining the identification & categorizing process.

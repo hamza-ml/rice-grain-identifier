@@ -173,9 +173,9 @@ def RGI(img_name, nxt_row):
 
 
 def run_RGI_with_small_dataset():
-    saylla = "saylla.jpg"
-    kainaat = "kainaat.jpg"
-    basmati = "basmati.jpg"
+    saylla = "sample_saylla.jpg"
+    kainaat = "sample_kainaat.jpg"
+    basmati = "sample_basmati.jpg"
 
     next_row = 0
     count = 0
